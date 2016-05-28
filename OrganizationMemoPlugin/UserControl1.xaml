@@ -98,7 +98,7 @@
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="400"/>
+                <ColumnDefinition Width="auto"/>
                 <ColumnDefinition Width="auto"/>
             </Grid.ColumnDefinitions>
             <WrapPanel Grid.Row="0">
@@ -114,7 +114,7 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="auto"/>
                 </Grid.ColumnDefinitions>
-                <WrapPanel Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left">
+                <WrapPanel Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" Margin="0,0,0,5">
                     <TextBlock Grid.Row="0" Grid.Column="0">
                         <Run FontSize="15" Text="{Binding DisplayFleet.FirstFleetName, Mode=OneWay}"/>
                     </TextBlock>
@@ -131,11 +131,11 @@
                                 </Style.Triggers>
                             </Style>
                         </TextBlock.Style>
-                    <Run Text="(制空戦力: "/>
-                    <Run Text="{Binding DisplayFleet.MinAirSuperiorityPotential, Mode=OneWay}"/>
-                    <Run Text=" - "/>
-                    <Run Text="{Binding DisplayFleet.MaxAirSuperiorityPotential, Mode=OneWay}"/>
-                    <Run Text=")"/>
+                        <Run Text="(制空戦力: "/>
+                        <Run Text="{Binding DisplayFleet.MinAirSuperiorityPotential, Mode=OneWay}"/>
+                        <Run Text=" - "/>
+                        <Run Text="{Binding DisplayFleet.MaxAirSuperiorityPotential, Mode=OneWay}"/>
+                        <Run Text=")"/>
                     </TextBlock>
                 </WrapPanel>
                 <Grid Grid.Row="1" Grid.Column="0">
@@ -215,7 +215,7 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="auto"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock FontSize="15" Grid.Row="0" Grid.Column="0">
+                <TextBlock FontSize="15" Grid.Row="0" Grid.Column="0" Margin="0,0,0,5">
                     <Run Text="{Binding DisplayFleet.SecondFleetName, Mode=OneWay}"/>
                 </TextBlock>
                 <Grid Grid.Row="1" Grid.Column="0">
