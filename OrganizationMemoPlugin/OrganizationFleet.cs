@@ -13,6 +13,6 @@ namespace OrganizationMemoPlugin
         public List<OrganizationShipInfo> SecondFleet { get; set; }
         public int MaxAirSuperiorityPotential => FirstFleet == null ? 0 : FirstFleet.CalcMaxAirSuperiorityPotential();
         public int MinAirSuperiorityPotential => FirstFleet == null ? 0 : FirstFleet.CalcMinAirSuperiorityPotential();
-
-    }
+		public int MediumAirSuperiorityPotential => FirstFleet == null ? 0 : FirstFleet.CalcMediumAirSuperiorityPotential();
+	}
 }

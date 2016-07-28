@@ -134,6 +134,8 @@
                         <Run Text="(制空戦力: "/>
                         <Run Text="{Binding DisplayFleet.MinAirSuperiorityPotential, Mode=OneWay}"/>
                         <Run Text=" - "/>
+                        <Run Text="{Binding DisplayFleet.MediumAirSuperiorityPotential, Mode=OneWay}"/>
+                        <Run Text=" - "/>
                         <Run Text="{Binding DisplayFleet.MaxAirSuperiorityPotential, Mode=OneWay}"/>
                         <Run Text=")"/>
                     </TextBlock>
